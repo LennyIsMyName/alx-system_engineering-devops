@@ -1,2 +1,4 @@
+#!/bin/bash
+ls > 3-twofiles
 ls >> 3-twofiles
 
