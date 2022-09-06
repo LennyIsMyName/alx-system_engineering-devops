@@ -1,4 +1,4 @@
 #!/bin/bash
-ls > 3-twofiles
-ls >> 3-twofiles
+ls /etc/passwd > 3-twofiles
+ls /etc/hosts >> 3-twofiles
 
