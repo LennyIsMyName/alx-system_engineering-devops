@@ -1,2 +1,2 @@
 #!/bin/bas
-declare -l /alx-system_engineering-devops/0x02-shell_redirections/="/a/"
+ls -t | head
