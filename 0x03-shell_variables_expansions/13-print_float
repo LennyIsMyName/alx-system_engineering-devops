@@ -1,2 +1,2 @@
 #!/bin/bash
-du | cut -NUM 2
+printf "%.2f\n" $NUM
