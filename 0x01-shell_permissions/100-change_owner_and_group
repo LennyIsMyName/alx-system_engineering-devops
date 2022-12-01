@@ -1,2 +1,2 @@
 #!/bin/bash
-find . chown vincent.staff {} +
+chown vincent.staff {} +
