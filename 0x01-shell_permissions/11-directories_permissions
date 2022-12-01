@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -exec chmod 755 {} 
+find . -type f -exec chmod 777 {} 
