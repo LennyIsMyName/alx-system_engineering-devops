@@ -1,2 +1,2 @@
 #!/bin/bash
-find . ls -1 | basename | -empty
+find . | -empty | ls -1
