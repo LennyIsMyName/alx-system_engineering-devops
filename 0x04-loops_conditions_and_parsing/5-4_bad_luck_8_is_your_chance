@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# This script prints "Best school" to the stdout 10 times using a while loop
+# But prints bad luck for the forth round,
+# and good luck for the 8th round.
+
+counter=1
+
+while [ $counter -le 10 ]
+do
+	echo "Best School"
+	if [ $counter -eq 4 ]; then
+		echo "bad luck"
+	elif [ $counter -eq 8 ]; then
+		echo "good luck"
+	fi
+	counter=$((counter+1))
+done
