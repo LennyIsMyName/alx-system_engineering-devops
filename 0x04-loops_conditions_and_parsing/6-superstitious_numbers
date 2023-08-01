@@ -7,13 +7,13 @@ do
 	echo "$counter"
 	case $counter in 
 		4) 
-			echo "bad lack from China"
+			echo "bad luck from China"
 			;;
 		9)
-			echo "bad lack from Japan"
+			echo "bad luck from Japan"
 			;;
 		17)
-			echo "bad lack from Italy"
+			echo "bad luck from Italy"
 			;;
 	esac
 	((counter++))
