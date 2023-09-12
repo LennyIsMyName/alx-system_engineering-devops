@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+LOCAL="127.0.0.2"
+FACEBOOK="8.8.8.8"
+
+if [ -f "/etc/hosts" ]; then
+	sed -i "s/^127.0.0.1.*/$LOCAL localhost/" /etc/hosts
+
+	echo "$FACEBOOK facebook.com" >> /etc/hosts
+fi
