@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 #list all attached IPs
 
-addresses=$(hostname -I)
-addresses=(${addresses//" "/ })
-for ip in "${addresses[@]}";
-do
-	printf "$ip\n"
-done
+ip=$(ip address| awk '/inet/ {print $2}' | grep -v ^::1 | grep -v ^127)
+echo "$ip"
