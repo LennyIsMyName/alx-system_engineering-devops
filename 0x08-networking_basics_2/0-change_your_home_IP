@@ -4,7 +4,7 @@ LOCAL="127.0.0.2"
 FACEBOOK="8.8.8.8"
 
 if [ -f "/etc/hosts" ]; then
+	cp /etc/hosts ~/hosts.new
 	sed -i "s/^127.0.0.1.*/$LOCAL localhost/" /etc/hosts
-
-	echo "$FACEBOOK facebook.com" >> /etc/hosts
+	cp -f ~/hosts/new /etc/hosts
 fi
