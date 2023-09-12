@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#list all attached IPs
+
+addresses=$(hostname -I)
+addresses=(${addresses//" "/ })
+for ip in "${addresses[@]}";
+do
+	printf "$ip\n"
+done
