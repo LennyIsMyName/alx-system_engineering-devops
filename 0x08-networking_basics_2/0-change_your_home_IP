@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# change the /etc/hosts file
 
 LOCAL="127.0.0.2"
 FACEBOOK="8.8.8.8"
